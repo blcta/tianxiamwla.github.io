@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- 设置页面标题 -->
+    <title>翔翔</title>
+
+    <style>
+        /* 将页面中所有内容居中显示 */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        .container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;  /* 修改为顶部对齐 */
+            align-items: center;
+            background-image: url('example.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* 设置标题样式 */
+        h1 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 0.5em;
+            text-align: center;
+            background: linear-gradient(to right, #618292, #226983, #2d49a5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 3px;
+            font-size: 118px;
+            line-height: 1;  /* 设置行高为 1，取消默认行高影响 */
+        }
+     
+        /* 设置 h1 标题的字体大小 */
+        h1 {
+            font-size: 91px;
+        }
+
+        /* 设置高亮文本的样式 */
+        .highlight {
+            background-color: #ffe300;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* 设置渐变填充效果的样式 */
+        .gradient {
+            background: linear-gradient(to right, #00a8ff, #6dd5fa, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <!-- 将标题和段落放在容器元素内，并应用垂直居中样式 -->
+    <div class="container">
+        <!-- 页面主体部分 -->
+        <h1>翔翔<img src="https://i.postimg.cc/4yhRdjqx/elfin-run2.png" alt="跑步"></h1>
+
+        <!-- 第一段自我描述 -->
+        <p>我是一个喜欢<span class="highlight">运动</span>和<span class="highlight">阅读</span>的人，平时喜欢<span class="highlight">跑步</span>和<span class="highlight">游泳</span>保持健康，也喜欢<span class="highlight">看书</span>来放松心情。</p>
+
+        <!-- 第二段自我描述 -->
+        <p>我<span class="highlight">习惯每天早上起床后喝一杯咖啡</span>，开启新的一天。</p>
+
+        <!-- 第三段自我描述 -->
+        <p>我的目标是成为一名出色的 [你的职业或领域]，因此我会不断<span class="gradient">努力学习和提升自己的专业能力</span>，争取在这个领域有所建树。</p>
+    </div>
+
+    <!-- 导入 JavaScript 脚本 -->
+    <script src="script.js"></script>
+</body>
+</html>
